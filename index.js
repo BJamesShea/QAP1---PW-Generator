@@ -3,6 +3,9 @@ const process = require("node:process");
 
 let lengthValue = 8; // default value
 let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const numbers = "0123456789";
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const symbols = "!@#$%^&*()_+";
 
 const arguments = process.argv.slice(2);
 
@@ -34,6 +37,19 @@ if (
   } else {
     console.log("Invalid length value. Using default length of 8.");
     process.exit(1);
+  }
+
+  // extra features for brownie points
+
+  if (arguments.includes("--numbers") || arguments.includes("-n")) {
+    lowerCase += numbers;
+  }
+
+  if (arguments.includes("--uppercase") || arguments.includes("-u")) {
+    lowerCase += upperCase;
+  }
+
+  if (arguments.includes("--symbols") || arguments.includes("-s")) {
   }
 
   console.log(`Password length to use: ${lengthValue}`);
