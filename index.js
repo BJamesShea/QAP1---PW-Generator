@@ -50,20 +50,6 @@ if (
   }
 }
 
-// extra features for brownie points
-
-if (arguments.includes("--numbers") || arguments.includes("-n")) {
-  lowerCase += numbers;
-}
-
-if (arguments.includes("--uppercase") || arguments.includes("-u")) {
-  lowerCase += upperCase;
-}
-
-if (arguments.includes("--symbols") || arguments.includes("-s")) {
-  lowerCase += symbols;
-}
-
 console.log(`Password length to use: ${lengthValue}`);
 
 let password = "";
