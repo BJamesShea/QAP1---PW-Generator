@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 const process = require("node:process");
 
+// bin command is qap1
+
 let lengthValue = 8; // default value
-let lowerCase = "abcdefghijklmnopqrstuvwxyz";
-const numbers = "0123456789";
-const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const symbols = "!@#$%^&*()_+";
+let lowerCase = "abcdefghijklmnopqrstuvwxyz"; // lowercase letters
+const numbers = "0123456789"; // numbers
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // uppercase letters
+const symbols = "!@#$%^&*()_+"; // symbols
 
 const arguments = process.argv.slice(2);
 
