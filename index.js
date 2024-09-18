@@ -2,7 +2,7 @@
 const process = require("node:process");
 
 let lengthValue = 8; // default value
-const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+let lowerCase = "abcdefghijklmnopqrstuvwxyz";
 
 const arguments = process.argv.slice(2);
 
