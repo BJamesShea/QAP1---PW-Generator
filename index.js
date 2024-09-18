@@ -50,6 +50,7 @@ if (
   }
 
   if (arguments.includes("--symbols") || arguments.includes("-s")) {
+    lowerCase += symbols;
   }
 
   console.log(`Password length to use: ${lengthValue}`);
