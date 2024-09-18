@@ -3,6 +3,14 @@ const process = require("node:process");
 
 // bin command is qap1
 
+// tested and working ( with both letter and full words for arguments)
+// npx qap1 --l
+// npx qap1 --length 10
+// npx qap1 --length  --numbers
+// npx qap1 --length 10 --numbers --uppercase
+// npx qap1 --length  --numbers --uppercase --symbols
+// npx qap1 --length 15 --numbers --uppercase --symbols --help
+
 let lengthValue = 8; // default value
 let lowerCase = "abcdefghijklmnopqrstuvwxyz"; // lowercase letters
 const numbers = "0123456789"; // numbers
