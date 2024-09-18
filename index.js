@@ -4,7 +4,7 @@ const process = require("node:process");
 let lengthValue = 8; // default value
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 
-const arguments = process.argv.slice(2); // Corrected spelling
+const arguments = process.argv.slice(2);
 
 if (
   arguments.includes("help") ||
@@ -15,6 +15,9 @@ if (
     `Usage:
             --help, -h: Show help screen
             --length, -l: Length of the password (default 8)
+            --numbers, -n: Include numbers in the password
+            --uppercase, -u: Include uppercase letters in the password
+            --symbols, -s: Include symbols in the password
     `
   );
 } else if (arguments.includes("--length") || arguments.includes("-l")) {
