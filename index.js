@@ -9,7 +9,7 @@ const numbers = "0123456789"; // numbers
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // uppercase letters
 const symbols = "!@#$%^&*()_+"; // symbols
 
-const arguments = process.argv.slice(2);
+const arguments = process.argv.slice(2); // extract CLI arguments
 
 if (
   arguments.includes("help") ||
