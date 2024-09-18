@@ -1,0 +1,14 @@
+{
+  "name": "qap1---pw-generator",
+  "version": "1.0.0",
+  "description": "A basic CLI app to generate passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "qap1": "./index.js"
+  },
+  "author": "Brandon Shea",
+  "license": "MIT"
+}
